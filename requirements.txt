@@ -1,6 +1,4 @@
 streamlit
-
-pptx
 os
 python-pptx
 google-generativeai
