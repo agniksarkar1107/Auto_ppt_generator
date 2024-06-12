@@ -1,5 +1,4 @@
 streamlit
-os
 python-pptx
 google-generativeai
 python-dotenv
