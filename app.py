@@ -14,8 +14,8 @@ from pptx import Presentation
 
 
 
-os.getenv("AIzaSyBdz-qcLFRDsR-mm37AlRf2w6RZws2lDL0")
-genai.configure(api_key=os.getenv("AIzaSyBdz-qcLFRDsR-mm37AlRf2w6RZws2lDL0"))
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 TITLE_FONT_SIZE = Pt(30)
 SLIDE_FONT_SIZE = Pt(16)
