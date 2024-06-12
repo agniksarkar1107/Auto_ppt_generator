@@ -1,6 +1,5 @@
 streamlit
-base64
-openai
+
 pptx
 os
 python-pptx
