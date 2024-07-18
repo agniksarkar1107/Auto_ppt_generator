@@ -152,8 +152,7 @@ if submit:
     #sentences = split_sentences(cleaned_text)
     print("final content ready")
     powerpoint = slide_maker(powerpoint,topic, sub_titles, final_content)
-    powerpoint.save(f"Downloads/{topic}.pptx")
-    st.text("Presentation Ready")
-    download_button(f"Downloads/{topic}.pptx",topic)
-    print("Presentation Ready")
+    
+    st.download_button(label = 'Download ppw', data = powerpoint, file_name = 'powerpoint.ppt')
+
     
