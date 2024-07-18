@@ -153,6 +153,12 @@ if submit:
     print("final content ready")
     powerpoint = slide_maker(powerpoint,topic, sub_titles, final_content)
     
-    st.download_button(label = 'Download ppw', data = powerpoint, file_name = 'powerpoint.ppt')
+    
+    binary_output = BytesIO()
+    powerpoint.save(binary_output) 
+
+    st.download_button(label = 'Download ppw',
+                   data = binary_output.getvalue(),
+                   file_name = 'my_power.pptx')
 
     
