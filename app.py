@@ -157,8 +157,8 @@ if submit:
     binary_output = BytesIO()
     powerpoint.save(binary_output) 
 
-    st.download_button(label = 'Download ppw',
+    st.download_button(label = 'Click to download presentation',
                    data = binary_output.getvalue(),
-                   file_name = 'my_power.pptx')
+                   file_name = 'Presentation.pptx')
 
     
